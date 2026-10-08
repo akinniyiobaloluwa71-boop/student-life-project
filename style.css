@@ -85,6 +85,12 @@ body {
   margin: 0 auto 32px auto;
 }
 
+.research-note {
+  margin: -16px auto 24px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
 /* ===== CALL-TO-ACTION BUTTON ===== */
 .cta-button {
   background-color: var(--primary);
