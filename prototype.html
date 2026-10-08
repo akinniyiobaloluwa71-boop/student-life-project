@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student-focused project shaped by real student feedback.">
+  <title>Student Life Project — Prototype</title>
+  <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+  <!-- Prototype header -->
+  <header class="prototype-header">
+    <p>Student Life Project — Prototype</p>
+    <a href="index.html">Back to main site</a>
+  </header>
+
+  <main>
+    <!-- Weekly planning introduction -->
+    <section aria-labelledby="week-title">
+      <h1 id="week-title">This Week</h1>
+      <p class="intro">Set one goal for the week. Break it into three small tasks. Tick them off as you go.</p>
+
+      <!-- Weekly goal and task form -->
+      <section class="card" id="form-card" aria-label="Set a weekly goal">
+        <form id="week-form">
+          <div>
+            <label for="week-goal">What do you want to achieve this week?</label>
+            <input id="week-goal" name="goal" type="text">
+          </div>
+          <div>
+            <label for="task-1">Task 1</label>
+            <input id="task-1" name="task-1" type="text">
+          </div>
+          <div>
+            <label for="task-2">Task 2</label>
+            <input id="task-2" name="task-2" type="text">
+          </div>
+          <div>
+            <label for="task-3">Task 3</label>
+            <input id="task-3" name="task-3" type="text">
+          </div>
+          <button type="submit">Save my week</button>
+        </form>
+      </section>
+
+      <!-- Saved goal and task checklist -->
+      <section class="card" id="checklist-card" aria-labelledby="saved-goal-heading" hidden>
+        <h2 id="saved-goal-heading"></h2>
+        <ul id="task-list"></ul>
+        <button id="new-week-button" class="secondary-button" type="button">Start a new week</button>
+      </section>
+    </section>
+  </main>
+
+  <!-- Prototype footer -->
+  <footer>
+    <p>Prototype build — for testing only.</p>
+  </footer>
+
+  <script src="prototype.js"></script>
+</body>
+</html>
